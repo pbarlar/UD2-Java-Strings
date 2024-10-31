@@ -10,6 +10,7 @@ class Ejercicio3 {
         cadena=entrada.nextLine();
         System.out.print("Indica el caracter que quieres buscar: ");
         caracter=entrada.nextLine();
+        System.out.println(cadena.substring(1,1));
         for (int i = 0; i < cadena.length(); i++) {
             if (cadena.substring(i, i)==caracter) {
                 contador=contador+1;
