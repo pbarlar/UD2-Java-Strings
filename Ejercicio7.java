@@ -9,7 +9,6 @@ public class Ejercicio7 {
         String caracter1=entrada.nextLine();
         System.out.print("Indica el caracter que quieres que entre a la cadena por el sustituido: ");
         String caracter2=entrada.nextLine();
-        cadena=cadena.replace(caracter1, caracter2);
-        System.out.println("La cadena con el caracter sustituido es: "+cadena);
+        System.out.println("La cadena con el caracter sustituido es: "+cadena.replace(caracter1, caracter2));
     }
 }
