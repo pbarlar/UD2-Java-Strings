@@ -7,13 +7,15 @@ public class Ejercicio9 {
         String cadena=entrada.nextLine();
         System.out.print("Indica una subcadena y te dira si esta dentro de la cadena: ");
         String subcad=entrada.nextLine();
-
-        for (int i = 1; i < cadena.length()-subcad.length(); i++) {
+        byte contador=0;
+        for (int i = 0; i < cadena.length()-subcad.length(); i++) {
            if (cadena.substring(i, subcad.length()+i).equals(subcad)) {
-            System.out.println("La subcadena esta dentro de la cadena");
-           }else{
-            
+            System.out.println("La subcadena "+subcad+" esta dentro de la cadena.");
+            contador++;
            }
+        }
+        if (contador!=1) {
+            System.out.println("La subcadena "+subcad+" no esta dentro de la cadena.");
         }
     }
 }
